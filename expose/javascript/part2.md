@@ -31,4 +31,6 @@
 15. The difference between == and === operators is that == is non-strict check which allows type conversion before checking, but === is strict check which not allows type conversion before checking
 
 17. The result will be [2, 4, 6]. When we call the modifyArray function, we go through the every element of the input array [1, 2, 3]. Then, we pass each value into the doSomething function, which is stored in the callback parameter. The doubled value is returned and then pushed into the returned array. 
- 
+
+19. The output order is 1, 4, 3, 2. 
+    1 and 4 print first because they are synchronous and execute immediately. Both setTimeouts are queued and only run after all synchronous code finishes. The 0ms timeout prints 3, then the 1000ms timeout prints 2.
