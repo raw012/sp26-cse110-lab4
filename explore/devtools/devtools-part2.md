@@ -1,0 +1,2 @@
+1. The bug is that the sum function concats two strings inputs instead of doing the addition of the value of these two strings.
+2. I would fix it by converting the type of two input into Number before adding them.
